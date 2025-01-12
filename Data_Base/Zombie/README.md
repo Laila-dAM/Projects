@@ -1,0 +1,1 @@
+Project tracks survivors, zombies, refugees, and supplies. It includes tables to store information about survivors, zombies defeated, refuge locations, and supply details. The project provides queries to find refuges with the most survivors, calculate supply durations, and track zombie kills per survivor.
