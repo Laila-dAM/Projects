@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "router.c"
-#include "device.c"
-#include "utils.c"
+#include "router.h"
+#include "device.h"
+#include "utils.h"
 
 void network_main(){
     init_router();
