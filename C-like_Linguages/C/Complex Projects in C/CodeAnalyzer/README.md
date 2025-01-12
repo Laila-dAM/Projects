@@ -1,0 +1,1 @@
+This project is a tool that reads and analyzes source code to identify errors and potential improvements. It uses C for parsing and lexical/syntactic analysis, and Python for generating visualizations and reports based on the analysis.
