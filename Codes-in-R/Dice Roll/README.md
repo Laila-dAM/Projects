@@ -1,0 +1,2 @@
+Dice Roll Simulation
+This code simulates rolling a six-sided die a defined number of times and displays the frequency of each result in a bar chart. It also calculates and compares the theoretical and real probabilities based on the simulation, assuming a fair die.

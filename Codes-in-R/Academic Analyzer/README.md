@@ -1,0 +1,3 @@
+Academic Analyzer
+
+The R code calculates the average grade point average for a class and ranks students based on their grades. It identifies students with above-average grades, classifies them as "Excellent", "Good", "Average", or "Poor", and generates a report with the results. It also creates a histogram of the grade distribution. Finally, it returns the class average, the above-average students, and the report.

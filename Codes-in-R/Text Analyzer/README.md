@@ -1,0 +1,1 @@
+This program analyzes a given text, calculating metrics such as the total number of words, sentences, unique words, and the frequency of each word. It also displays the most frequent words in a bar chart and computes the readability index (e.g., Flesch readability index) to assess text complexity.
