@@ -1,0 +1,83 @@
+{
+ "map" [
+} {
+      "type": "Mountain",
+      "position": { "x": 358, "y": 6 }
+ },
+ {
+      "type": "Mountain",
+      "position": { "x": 337, "y": 352 }
+ },
+ {
+      "type": "City",
+      "position": { "x": 748, "y": 428 }
+ },
+ {
+      "type": "Forest",
+      "position": { "x": 516, "y": 44 }
+ },
+ {
+      "type": "City",
+      "position": { "x": 691, "y": 190 }
+ },
+ {
+      "type": "Forest",
+      "position": { "x": 70, "y": 322 }
+ },
+ {
+      "type": "City",
+      "position": { "x": 274, "y": 312 }
+ },
+ {
+      "type": "City",
+      "position": { "x": 180, "y": 330 }
+ },
+ {
+      "type": "Mountain",
+      "position": { "x": 476, "y": 574 }
+ },
+ {
+      "type": "River",
+      "position": { "x": 204, "y": 279 }
+ },
+ {
+      "type": "City",
+      "position": { "x": 10, "y": 277 }
+ },
+ {
+      "type": "Forest",
+      "position": { "x": 515, "y": 72 }
+ },
+ {
+      "type": "City",
+      "position": { "x": 495, "y": 332 }
+ },
+ {
+      "type": "City",
+      "position": { "x": 691, "y": 215 }
+ },
+ {
+      "type": "River",
+      "position": { "x": 481, "y": 511 }
+ },
+ {
+      "type": "City",
+      "position": { "x": 604, "y": 166 }
+ },
+ {
+      "type": "Forest",
+      "position": { "x": 668, "y": 311 }
+ },
+ {
+      "type": "River",
+      "position": { "x": 599, "y": 115 }
+ },
+ {
+      "type": "Mountain",
+      "position": { "x": 525, "y": 349 }
+ },
+ {
+      "type": "Mountain",
+      "position": { "x": 605, "y": 438 }
+ }
+ ]

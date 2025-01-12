@@ -1,0 +1,1 @@
+A simple operating system with a bootloader in Assembly and kernel functionality in C, featuring basic memory management, file system initialization, and interrupt handling, designed for educational purposes and low-level system programming.

@@ -1,0 +1,1 @@
+Create a program that simulates a reality show with virtual contestants, elimination rounds, and random events. Include interactions between contestants and a narrator with funny commentary.

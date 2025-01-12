@@ -1,0 +1,5 @@
+/home/lailamota238/C-like_Linguages/C#/AI Evolution Pokemon/obj/Debug/net6.0/AI Evolution Pokemon.csproj.AssemblyReference.cache
+/home/lailamota238/C-like_Linguages/C#/AI Evolution Pokemon/obj/Debug/net6.0/AI Evolution Pokemon.GeneratedMSBuildEditorConfig.editorconfig
+/home/lailamota238/C-like_Linguages/C#/AI Evolution Pokemon/obj/Debug/net6.0/AI Evolution Pokemon.AssemblyInfoInputs.cache
+/home/lailamota238/C-like_Linguages/C#/AI Evolution Pokemon/obj/Debug/net6.0/AI Evolution Pokemon.AssemblyInfo.cs
+/home/lailamota238/C-like_Linguages/C#/AI Evolution Pokemon/obj/Debug/net6.0/AI Evolution Pokemon.csproj.CoreCompileInputs.cache

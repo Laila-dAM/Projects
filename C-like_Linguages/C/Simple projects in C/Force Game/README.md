@@ -1,0 +1,1 @@
+String manipulation, user input/output and game logic, with special character handling and logic to draw the force "figure" in ASCII.

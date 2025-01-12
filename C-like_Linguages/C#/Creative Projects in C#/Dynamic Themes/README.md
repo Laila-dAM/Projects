@@ -1,0 +1,1 @@
+An application that creates custom themes for graphical user interfaces (UI) based on the cores predominantly from a user-provided image. Includes integration with design APIs such as Figma.

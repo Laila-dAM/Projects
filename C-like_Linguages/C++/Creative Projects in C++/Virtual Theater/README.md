@@ -1,0 +1,1 @@
+This enhanced program creates fully interactive theater scenes with kaomojis as characters. The user selects the genre (romance, action, comedy), and the program dynamically generates multiple lines of dialogue, actions, and audience interactions. Extras include randomized reactions like applause, boos, or cheers, adding more fun to the experience.

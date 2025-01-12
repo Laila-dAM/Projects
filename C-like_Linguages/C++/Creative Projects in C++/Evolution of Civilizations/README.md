@@ -1,0 +1,1 @@
+Guide the development of your civilization by making decisions about politics, economics, culture, technology, and the environment. Your choices impact growth, resources, and challenges as you attempt to lead your country to prosperity or prevent its collapse.

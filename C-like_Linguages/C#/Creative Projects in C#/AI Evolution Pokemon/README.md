@@ -1,0 +1,1 @@
+Create digital Pokémon species that evolve based on natural selection. Users set parameters such as climate, genetic mutation, and resource scarcity to see how species adapt to their environment.

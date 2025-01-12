@@ -1,0 +1,1 @@
+Create a basic operating system using C where you can implement a simple kernel to support operations like process management, memory handling, and file systems. Use Assembly to interact directly with hardware and Python to provide a script interface for customization.

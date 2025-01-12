@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" contect = "width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.0/signalr.min.js"></script>
+</head>
+<body>
+    <h1>Chat Room</h1>
+    <div id="messages"></div>
+    <input type = "text" id = "username" placeholder = "Enter your name">
+    <input type = "text" id = "message" placeholder = "Enter a message">
+    <button onclick = "sendMessage()">Send</button>
+
+<script>
+    const connection = new signalR.HubConnectionBuilder().withUrl("/charHub")
+    .build();
+
+    connection.on("ReceiveMessage", (user, message) => {
+        const msg = document.createElement("div");
+        msg.textContent = '${user}: ${message}';
+        document.getElementById("messages").appendChild(msg);
+    });
+connection.start().catch(err => console.error(err.toString()));
+
+function sendMessage(){
+    const user = document.getElementById("username").value;
+    const message = document.getElementById("message").value;
+    connection.invoke("SendMessage", user, message)
+    .catch(err => console.error(err.toString()));
+
+}
+</script>
+</body>
+</html>
