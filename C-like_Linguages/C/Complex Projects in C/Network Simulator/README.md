@@ -1,0 +1,1 @@
+Develop a simulator in C to emulate communication between devices and use Python for traffic, analysis and real-time graphical visualization. Implement protocols, routing and interactive interface.
