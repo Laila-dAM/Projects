@@ -1,0 +1,1 @@
+Create a text editor with support for Markdown syntax. Use C++ for core logic to handle file operations and text formatting, while Python or JavaScript is used for rendering live previews of the Markdown content.
