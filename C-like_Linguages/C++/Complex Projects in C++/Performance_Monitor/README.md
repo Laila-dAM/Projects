@@ -1,0 +1,1 @@
+A platform that collects and monitors system performance metrics (CPU, memory, network) in real-time using C++ for data collection and Python for analysis and visualization. The platform generates real-time graphs and performance reports based on the collected data.
