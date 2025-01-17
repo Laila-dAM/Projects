@@ -45,8 +45,3 @@ Developing this game involves overcoming key challenges:
 ### Prerequisites
 - C# Compiler (e.g., .NET SDK)
 - C++ Compiler (e.g., GCC, Clang, or MSVC)
-
-### Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/ascii-space-colonization-simulator.git
