@@ -1,0 +1,3 @@
+Dust storm! - A large dust storm is affecting the area. Visibility is low, and all activities are halted temporarily.
+Equipment malfunction! - A critical piece of equipment has broken down. Immediate repair is required.
+No events this turn. - No significant events occurred during this cycle.
