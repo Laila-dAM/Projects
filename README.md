@@ -1,8 +1,3 @@
-#⋆｡‧˚ʚ Laila ɞ˚‧｡⋆
-
-▶︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:10
-
-
 ## 💻 **My Cyber Skills**  
 ### 🎨 *Graphic Design*
 - ✦ Adobe CS6 (Photoshop, Illustrator, InDesign, Flash, Fireworks, After Effects)  
@@ -44,3 +39,5 @@ Repositories:
 🐙 Contato → lailamota.238@gmail.com
 
 🪼 Instagram → @cherriila → https://www.instagram.com/cherriila/
+
+▶︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:10
