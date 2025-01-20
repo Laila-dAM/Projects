@@ -43,4 +43,4 @@ Repositories:
 
 🐙 Contato → lailamota.238@gmail.com
 
-🪼 Instagram → @cherriila
+🪼 Instagram → @cherriila → https://www.instagram.com/cherriila/
