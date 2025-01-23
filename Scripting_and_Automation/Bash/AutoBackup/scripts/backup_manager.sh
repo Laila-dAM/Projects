@@ -8,16 +8,16 @@ INCREMENTAL_BACKUP_DIR="$BACKUP_DIR/incremental"
 DATE=$(date +%Y-%m-%d_%H-%M-%S)
 
 function log_message {
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$LOG_FILE"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$LOG_FILE"
 }
 
-function perform_backup{
-mkdir -p "$FULL_BACKUP_DIR"
-mkdir -p "$INCREMENTAL_BACKUP_DIR"
+function perform_backup {
+    mkdir -p "$FULL_BACKUP_DIR"
+    mkdir -p "$INCREMENTAL_BACKUP_DIR"
 
-while read -r directory; do
-if [ ! -d "$directory" ]; then
-log_message "Directory not found: $directory"
+    while read -r directory; do
+        if [ ! -d "$directory" ]; then
+            log_message "Directory not found: $directory"
             continue
         fi
 
@@ -46,7 +46,3 @@ else
     log_message "Invalid argument: $1"
     exit 1
 fi
-
-
-
-}
