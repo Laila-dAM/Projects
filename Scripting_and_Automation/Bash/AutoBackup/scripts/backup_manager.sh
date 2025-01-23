@@ -1,7 +1,7 @@
 #!/bin/bash
 
 LOG_FILE="backup.log"
-CONFIG_FILE="directories.conf"
+CONFIG_FILE="../config/directories.conf"
 BACKUP_DIR="backups"
 FULL_BACKUP_DIR="$BACKUP_DIR/full"
 INCREMENTAL_BACKUP_DIR="$BACKUP_DIR/incremental"
