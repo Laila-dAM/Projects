@@ -16,6 +16,3 @@ This project emulates basic OS functions using Bash.
 - `simulator.sh`: Main script to simulate the OS.
 - `file_operations.sh`: Helper script for file operations.
 - `dir_operations.sh`: Helper script for directory operations.
-
-## License
-MIT License
