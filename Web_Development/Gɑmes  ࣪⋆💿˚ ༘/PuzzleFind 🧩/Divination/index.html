@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaomoji Guessing Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Kaomoji Guessing Challenge</h1>
+            <p>Can you guess the correct emotion? 😎</p>
+            <div class="scoreboard">
+                <span>Score: <span id="score">0</span></span>
+                <span>Round: <span id="round">1</span></span>
+            </div>
+        </div>
+        <div class="kaomoji" id="kaomoji">(╯°□°）╯︵ ┻━┻</div>
+        <div class="options" id="options"></div>
+        <div class="message" id="message"></div>
+        <div class="controls">
+            <button class="new-round" onclick="newRound()">Next Round 🔄</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

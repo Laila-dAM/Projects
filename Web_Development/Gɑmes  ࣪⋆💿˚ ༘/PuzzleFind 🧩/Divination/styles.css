@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffe6f1;
+    color: #4a004a; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.game-container {
+    width: 80%;
+    max-width: 800px;
+    border: 2px solid #ff99cc; 
+    border-radius: 25px; 
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 153, 204, 0.5);
+    animation: fadeIn 1s ease;
+}
+
+.header h1 {
+    font-size: 40px;
+    color: #ff66b2; 
+    text-shadow: 0 0 15px #ff66b2;
+}
+
+.header p {
+    font-size: 22px;
+    color: #ff3385; 
+    margin-top: 10px;
+}
+
+.scoreboard {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff3385; 
+}
+
+.kaomoji {
+    font-size: 100px;
+    margin: 40px 0;
+    text-shadow: 0 0 20px #ff66b2;
+    animation: kaomojiAppear 1s ease-in-out;
+}
+
+.options button {
+    background-color: #ffe6f1; 
+    border: 2px solid #ff66b2; 
+    color: #ff66b2;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    text-shadow: 0 0 10px #ff66b2;
+    border-radius: 12px; 
+    transition: all 0.3s ease-in-out;
+}
+
+.options button:hover {
+    background-color: #ff66b2;
+    color: #fff; 
+    transform: scale(1.1);
+}
+
+.message {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #ff3385; 
+    text-shadow: 0 0 20px #ff3385;
+}
+
+.controls {
+    margin-top: 30px;
+}
+
+.new-round {
+    background-color: transparent;
+    border: 2px solid #ff66b2;
+        color: #ff66b2;
+    padding: 15px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 0 0 12px #ff66b2;
+    border-radius: 12px; 
+    transition: all 0.3s ease-in-out;
+}
+
+.new-round:hover {
+    background-color: #ff66b2;
+   
