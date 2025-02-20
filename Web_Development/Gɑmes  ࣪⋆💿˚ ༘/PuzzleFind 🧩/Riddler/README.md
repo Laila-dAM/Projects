@@ -20,7 +20,3 @@ A simple game where players solve riddles using kaomojis and ASCII art.
 - HTML  
 - CSS  
 - JavaScript  
-
-## Installation
-
-1. Clone the repository:  
