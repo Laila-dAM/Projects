@@ -80,3 +80,25 @@ int checkWin(){
     }
 return 1;
 }
+int main() {
+    initializeBoard();
+    placeErrors();
+
+        printf("Welcome to Mindsweeper! Your mission: debug the code without triggering fatal errors.\n");
+
+    while (1) {
+        printBoard();
+
+        int x, y;
+        printf("Select a line and column (e.g., 1 2): ");
+scanf("%d %d", &x, &y);
+
+    revealCell(x,y);
+        if(checkWin()){
+            printBoard();
+                        printf("\nCongratulations! You successfully debugged the system and saved the project!\n");
+break;
+        }
+    }
+    return 0;
+}
