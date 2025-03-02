@@ -21,7 +21,7 @@ void initializeBoard() {
 void placeErrors(){
     srand(time(NULL));
     int count = 0;
-    white (count < ERRORS){
+    while (count < ERRORS){
         int x = rand() % SIZE;
         int y = rand() % SIZE;
         if (board[x][y] != ERROR){
