@@ -1,15 +1,17 @@
-# Memory Matrix Game
+# Memory Matrix
 
-This is a simple C program that simulates a memory game where the user must memorize and reconstruct a randomly generated binary matrix.
+Memory Matrix – A system's memory has been corrupted! Reconstruct information stored in logical blocks by finding patterns.
 
 ## Features
-- A matrix of size 5x5 is randomly generated and displayed to the user.
-- The user has 3 attempts to reconstruct the matrix correctly.
-- The program compares the user's input with the original matrix and gives feedback on success or failure.
+- A 5x5 matrix is ​​randomly generated with binary values ​​(0 or 1).
+- The pattern is displayed for a short period before being hidden.
+- The player inputs their reconstruction of the pattern.
+- The program checks whether the player's input matches the original pattern and provides feedback.
 
-## How to Play
-1. The program generates a 5x5 binary matrix and asks you to memorize it.
-2. After a short delay, the matrix is ​​hidden.
-3. You have 3 attempts to reconstruct the matrix. Input your reconstructed matrix using `0` and `1`.
-4. If you reconstruct the matrix correctly, you win! If not, you get another chance.
-5. If you fail after 3 attempts, the correct matrix is ​​displayed.
+## How to play
+1. Run the program.
+2. A 5x5 matrix is ​​displayed with a random pattern of `█` and `·`.
+3. Memorize the pattern before it disappears.
+4. Reconstruct the pattern by inputting a matrix of `0`s and `1`s.
+5. If your input matches the original pattern, you win!
+6. If your input is incorrect, you lose, and the program informs you of the failure.
