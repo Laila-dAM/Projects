@@ -52,7 +52,7 @@ int comparePatterns(int pattern[SIZE][SIZE], int input[SIZE][SIZE]) {
 
 int main() {
     srand(time(NULL));
-    int pattern[SIZE][SIZE];coo
+    int pattern[SIZE][SIZE];
         int input[SIZE][SIZE];
 
     generatePattern(pattern);
