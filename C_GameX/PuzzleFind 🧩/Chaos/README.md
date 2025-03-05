@@ -2,7 +2,7 @@
 
 The **Reverse Logic** game! This is a simple text-based game where your task is to find the opposite of a given rule.
 
-##Description
+## Description
 
 In this game, you are given different puzzles. Each puzzle has a rule, and your goal is to think of the opposite of that rule.
 
@@ -11,7 +11,7 @@ For example:
 
 You will have three attempts to answer each puzzle correctly. If you fail three times, the game is over. If you solve all the puzzles, you win!
 
-##Features
+## Features
 
 - 10 interesting logic puzzles.
 - 3 attempts per puzzle.
