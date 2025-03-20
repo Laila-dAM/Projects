@@ -1,0 +1,1 @@
+Stup1d net 𝟒𝐜𝐡𝐚𝐧 rules.
