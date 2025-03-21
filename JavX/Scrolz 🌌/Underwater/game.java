@@ -34,3 +34,37 @@ map[6][15] = 'X';
 
 map[playerY][playerX] = 'O';
 }
+public static void displayMap(){
+StringBuilder sb = new StringBuilder();
+for(int i = 0; i < 10; i++){
+for(int j = 0; j < 30; j++){
+sb.append(map[i][j]);
+}
+sb.append("\n");
+}
+System.out.println(sb.toString());
+System.out.println("Score: " + score);
+}
+public static void movePlayer(){
+String direction = JOptionPane.showInputDialog("Move (WASD):");
+if(direction != null){
+direction = direction.toUpperCase();
+map[playerY][playerX] =' ';
+
+if(direction.equals("W") && playerY > 1){
+playerY--;
+}
+else if(direction.equal("S") && playerY < 8){
+playerY++;
+}
+else if (direction.equals("A") && playerX > 1){
+playerX--;
+}
+else if (direction.equal("D") && playerX < 28){
+playerX++;
+}
+map[playerY][playerX] = 'O'; 
+}
+}
+public static void checkCollision() {
+}
