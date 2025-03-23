@@ -23,7 +23,8 @@ if(i == 0 || i == 9){
 else if(j == 0 || j == 29){
 map[i][j] = '|';
 }
-else[i][j] = ' ';
+else{
+    map[i][j] = ' ';
 }
 }
 }
@@ -54,13 +55,13 @@ map[playerY][playerX] =' ';
 if(direction.equals("W") && playerY > 1){
 playerY--;
 }
-else if(direction.equal("S") && playerY < 8){
+else if(direction.equals("S") && playerY < 8){
 playerY++;
 }
 else if (direction.equals("A") && playerX > 1){
 playerX--;
 }
-else if (direction.equal("D") && playerX < 28){
+else if (direction.equals("D") && playerX < 28){
 playerX++;
 }
 map[playerY][playerX] = 'O'; 
