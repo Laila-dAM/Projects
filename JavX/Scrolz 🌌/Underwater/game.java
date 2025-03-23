@@ -67,4 +67,17 @@ map[playerY][playerX] = 'O';
 }
 }
 public static void checkCollision() {
+if (map[playerY][playerX] == 'X') {
+gameRunning = false;
+popUp("You were eaten by a predator! (｡•́︿•̀｡)");
+}
+else if (map[playerY][playerX] == '*') {
+score++;
+map[playerY][playerX] = ' ';
+popUp("Pearl collected! (＾▽＾)");
+}
+}
+public static void popUp(String message) {
+JOptionPane.showMessageDialog(null, message, "Game Alert", JOptionPane.INFORMATION_MESSAGE);
+}
 }
