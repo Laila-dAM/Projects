@@ -13,9 +13,3 @@ A simple retro-style farm simulation game in Java.
 ## 🛠 Requirements
 
 - Java JDK 8 or higher
-
-## ▶️ How to Run
-
-```bash
-javac RetroFarmSimulator.java
-java RetroFarmSimulator
