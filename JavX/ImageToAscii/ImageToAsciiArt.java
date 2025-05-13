@@ -37,6 +37,52 @@ public class ImageToAsciiArt {
                 }
             }
         });
-        
+    copyButton.addActionListener(e -> {
+        StringSelection selection = new StringSelection(asciiArea.getText());
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(selection, selection);
+        JOptionPane.showMessageDialog(frame, "ASCII copied to clipboard!");
+    });
+        JPanel panel = new JPanel();
+        panel.add(selectImageButton);
+        panel.add(copyButton);
+
+        frame.getContentPane().add(panel, BorderLayout.NORTH);
+frame.getContentPane().add(scrollPane, BorderLayout.CENTER);
+        frame.setVisible(true);
+    }
+    private String convertToAscii(BufferedImage image, int scale){
+        final String ASCII_CHARS = "@#S%?*+;:,. ";
+        int scaleX = scale;
+        int scaleY = scale * 2;
+
+        int width = image.getWidth() / scaleX;
+        int height = image.getHeight() / scaleY;
+
+        BufferedImage resized = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g = resized.createGraphics();
+        g.drawImage(image, 0, 0, width, height, null);
+        g.dispose();
+
+        StringBuilder ascii = new StringBuilder();
+
+        for(int y = 0; y < resized.getHeight(); y++){
+            for(int x = 0; x < resized.getWidth(); x++){
+                int pixel = resized.getRGB(x, y);
+                int alpha = (pixel >> 24) & 0xFF;
+                if (alpha < 128) {
+                    ascii.append(" ");
+                } else {
+                    int red = (pixel >> 16) & 0xFF;
+                    int green = (pixel >> 8) & 0xFF;
+                    int blue = pixel & 0xFF;
+                    int gray = (red + green + blue) / 3;
+                    int index = gray * (ASCII_CHARS.length() - 1) / 255;
+                    ascii.append(ASCII_CHARS.charAt(index));
+                }
+            }
+        ascii.append("\n");
+        }
+        return ascii.toString();
     }
 }
