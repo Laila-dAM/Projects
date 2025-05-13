@@ -26,7 +26,7 @@ public class ImageToAsciiArt {
         selectImageButton.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
             int result = fileChooser.showOpenDialog(frame);
-            if (result == JFileChooser.APROVE_OPTION){
+            if (result == JFileChooser.APPROVE_OPTION){
                 try {
                     File selectedFile = fileChooser.getSelectedFile();
                     BufferedImage image = ImageIO.read(selectedFile);
