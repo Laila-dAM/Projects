@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class PongGame extends JPanel implements KeyListener, ActionListener {
+public class pog extends JPanel implements KeyListener, ActionListener {
 
     private final int WIDTH = 800;
     private final int HEIGHT = 600;
@@ -69,6 +69,12 @@ public class PongGame extends JPanel implements KeyListener, ActionListener {
         }
 
         if (ballX <= 50 + PADDLE_WIDTH && ballY + BALL_SIZE >= paddle1Y && ballY <= paddle1Y + PADDLE_HEIGHT){
-            
+            ballSpeedX = -ballSpeedX;
+            ballX = 50 + PADDLE_WIDTH;
         }
+
+        if (ballX + BALL_SIZE >= WIDTH - 50 - PADDLE_WIDTH && ballY + BALL_SIZE >= paddle2Y &&
+                ballY <= paddle2Y + PADDLE_HEIGHT) {
+            
+                }
     }
