@@ -107,3 +107,43 @@ public class pog extends JPanel implements KeyListener, ActionListener {
             paddle2Y += paddleSpeed;
         }
     }
+
+    @Override
+    public void actionPerformed(ActionEvent e){
+        moveBall();
+        movePaddles();
+        repaint();
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e){
+        int code = e.getKeyCode();
+        if(code == keyEvent.VK_W) wPressed = true;
+        if(code == KeyEvent.VK_S) sPressed = true;
+        if(code == KeyEvent.VK_UP) upPressed = true;
+        if(code == KeyEvent.VK_DOWN) downPressed = true;
+    }
+
+    @Override
+    public void keyRelesed(KeyEvent e) {
+        int code = e.getKeyCode();
+        if(code == KeyEvent.VK_W) wPressed = false;
+        if(code == KeyEvent.VK_s) sPressed = false;
+        if(code == KeyEvent.VK_UP) upPressed = false;
+        if (code == KeyEvent.VK_DOWN) downPressed = false;
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e){}
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Classic Pong");
+        PongGame gamePanel = new PongGame();
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.add(gamePanel);
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
