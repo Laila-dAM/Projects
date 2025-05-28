@@ -75,6 +75,35 @@ public class pog extends JPanel implements KeyListener, ActionListener {
 
         if (ballX + BALL_SIZE >= WIDTH - 50 - PADDLE_WIDTH && ballY + BALL_SIZE >= paddle2Y &&
                 ballY <= paddle2Y + PADDLE_HEIGHT) {
-            
+            ballSpeedX = -ballSpeedX;
+            ballX = WIDTH - 50 - PADDLE_WIDTH - BALL_SIZE;
                 }
+        if (ballX < 0){
+            score2++;
+            resetBall();
+        }
+        if (ballX > WIDTH - BALL_SIZE){
+            score1++;
+            resetBall();
+        }
+    }
+    private void resetBall() {
+        ballX = WIDTH / 2 - BALL_SIZE / 2;
+        ballY = HEIGHT / 2 - BALL_SIZE / 2;
+        ballSpeedX = (Math.random() < 0.5) ? 3 : -3;
+        ballSpeedY = (Math.random() < 0.5) ? 3 : -3;
+    }
+    private void movePaddles() {
+        if(wPressed && paddle1Y > 0){
+            paddle1Y -= paddleSpeed;
+        }
+        if(sPressed && paddle1Y < HEIGHT - PADDLE_HEIGHT){
+            paddle1Y += paddleSpeed;
+        }
+        if(upPressed && paddle2Y > 0){
+            paddle2Y -= paddleSpeed;
+        }
+        if (downPressed && paddle2Y < HEIGHT - PADDLE_HEIGHT) {
+            paddle2Y += paddleSpeed;
+        }
     }
