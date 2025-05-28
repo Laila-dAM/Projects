@@ -2,7 +2,7 @@
 
 A simple pixel-style Breakout game written in Java using Swing.
 
-##Features
+## Features
 - Control the paddle with left and right arrow keys.
 - Bounce the ball to break colored blocks.
 - Score points for each broken block.
