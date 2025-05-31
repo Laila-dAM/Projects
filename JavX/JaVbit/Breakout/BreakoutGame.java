@@ -24,4 +24,32 @@ public class BreakoutGame extends JPanel implements KeyListener, ActionListener 
     private MapGenerator map;
 
     public BreakoutGame() {
+        map = new MapGenerator(3, 7);
+        addKeyListener(this);
+        setFocusable(true);
+        setFocusTraversalKeysEnabled(false);
+        timer = new Timer(delay, this);
+        timer.start();
 }
+    public void paint(Graphics g){
+        g.setColor(Color.black);
+        g.fillRect(1, 1, 700, 600);
+
+        map.draw((Graphics2D) g);
+
+        g.setColor(Color.white);
+        g.fillRect(0, 0, 3, 600);
+        g.fillRect(0, 0, 700, 3);
+        g.fillRect(697, 0, 3, 600);
+
+        g.setColor(Color.white);
+        g.setFont(new Font("Arial", Font.BOLD, 20));
+        g.drawString("Score: " + score, 550, 30);
+
+        g.setColor(Color.green);
+        g.fillRect(paddleX, 550, paddleWidth, paddleHeight);
+
+        g.setColor(Color.yellow);
+        g.fillOval(ballPosX, ballPosY, ballSize, ballSize);
+        
+    }
