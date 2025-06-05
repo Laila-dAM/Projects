@@ -51,5 +51,56 @@ public class BreakoutGame extends JPanel implements KeyListener, ActionListener 
 
         g.setColor(Color.yellow);
         g.fillOval(ballPosX, ballPosY, ballSize, ballSize);
-        
+
+         if (ballPosY > 570) {
+            play = false;
+            ballXDir = 0;
+            ballYDir = 0;
+
+            g.setColor(Color.red);
+            g.setFont(new Font("Arial", Font.BOLD, 40));
+            g.drawString("Game Over! ｡°(°.◜ᯅ◝°)°｡", 230, 300);
+
+            g.setFont(new Font("Arial", Font.BOLD, 20));
+            g.drawString("Press Enter to Restart", 230, 350);
+        }
+
+        if (totalBlocks <= 0) {
+            play = false;
+            ballXDir = 0;
+            ballYDir = 0;
+
+            g.setColor(Color.green);
+            g.setFont(new Font("Arial", Font.BOLD, 40));
+            g.drawString("You Won! ٩(>ᴗ<)وc", 260, 300);
+
+            g.setFont(new Font("Arial", Font.BOLD, 20));
+            g.drawString("Press Enter to Restart", 230, 350);
+        }
+
+        g.dispose();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        timer.start();
+
+        if (play) {
+            Rectangle ballRect = new Rectangle(ballPosX, ballPosY, ballSize, ballSize);
+            Rectangle paddleRect = new Rectangle(paddleX, 550, paddleWidth, paddleHeight);
+
+            if (ballRect.intersects(paddleRect)) {
+                ballYDir = -ballYDir;
+            }
+                    A:
+            for (int i = 0; i < map.map.length; i++) {
+                for (int j = 0; j < map.map[0].length; j++) {
+                    if (map.map[i][j] > 0) {
+                        int blockX = j * map.blockWidth + 80;
+                        int blockY = i * map.blockHeight + 50;
+                        int blockWidth = map.blockWidth;
+                        int blockHeight = map.blockHeight;
+
+                        Rectangle blockRect = new Rectangle(blockX, blockY, blockWidth, blockHeight);
+
     }
