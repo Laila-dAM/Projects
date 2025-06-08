@@ -184,4 +184,40 @@ public class BreakoutGame extends JPanel implements KeyListener, ActionListener 
         play = true;
         paddleX -= 20;
     }
+    public static void main(String[] args){
+        JFrame frame = new JFrame("Breakout Game");
+        BreakoutGame gamePlay = new BreakoutGame();
+        frame.setBounds(10, 10, 700, 600);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.add(gamePlay);
+        frame.setVisible(true);
     }
+}
+
+class MapGenerator {
+    public int[][] map;
+    public int blockWidth;
+    public int blockHeight;
+
+    public MapGenerator(int row, int col) {
+        map = new int[row][col];
+        for(int i = 0; i < map.length; i++){
+            for(int j = 0; j < map[0].length; j++){
+                map[i][j] = 1;
+            }
+        }
+        blockWidth = 540 / col;
+        blockHeight = 150 / row;
+    }
+
+    public void draw(Graphics2D g){
+        for(int i = 0; i < map.length; i++){
+            for(int j = 0; j < map[0].length; j++){
+                if(map[i][j] > 0){
+                    
+                }
+            }
+        }
+    }
+}
