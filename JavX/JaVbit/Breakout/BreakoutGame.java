@@ -108,7 +108,6 @@ public class BreakoutGame extends JPanel implements KeyListener, ActionListener 
                             totalBlocks--;
                             score += 5;
 
-                            // Check where ball hits the block, reverse direction accordingly
                             if (ballPosX + ballSize - 1 <= blockRect.x || ballPosX + 1 >= blockRect.x + blockRect.width) {
                                 ballXDir = -ballXDir;
                             } else {
@@ -124,15 +123,12 @@ public class BreakoutGame extends JPanel implements KeyListener, ActionListener 
             ballPosX += ballXDir;
             ballPosY += ballYDir;
 
-            // Left border
             if (ballPosX < 0) {
                 ballXDir = -ballXDir;
             }
-            // Top border
             if (ballPosY < 0) {
                 ballYDir = -ballYDir;
             }
-            // Right border
             if (ballPosX > 680) {
                 ballXDir = -ballXDir;
             }
