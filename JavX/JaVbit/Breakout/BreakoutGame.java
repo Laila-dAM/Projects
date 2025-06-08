@@ -103,4 +103,89 @@ public class BreakoutGame extends JPanel implements KeyListener, ActionListener 
 
                         Rectangle blockRect = new Rectangle(blockX, blockY, blockWidth, blockHeight);
 
+                        if (ballRect.intersects(blockRect)) {
+                            map.setBlockValue(0, i, j);
+                            totalBlocks--;
+                            score += 5;
+
+                            // Check where ball hits the block, reverse direction accordingly
+                            if (ballPosX + ballSize - 1 <= blockRect.x || ballPosX + 1 >= blockRect.x + blockRect.width) {
+                                ballXDir = -ballXDir;
+                            } else {
+                                ballYDir = -ballYDir;
+                            }
+
+                            break A;
+                        }
+                    }
+                }
+            }
+
+            ballPosX += ballXDir;
+            ballPosY += ballYDir;
+
+            // Left border
+            if (ballPosX < 0) {
+                ballXDir = -ballXDir;
+            }
+            // Top border
+            if (ballPosY < 0) {
+                ballYDir = -ballYDir;
+            }
+            // Right border
+            if (ballPosX > 680) {
+                ballXDir = -ballXDir;
+            }
+        }
+
+        repaint();
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {}
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            if (paddleX >= 600) {
+                paddleX = 600;
+            } else {
+                movePaddleRight();
+            }
+        }
+        if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+            if (paddleX <= 10) {
+                paddleX = 10;
+            } else {
+                movePaddleLeft();
+            }
+        }
+        if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+            if (!play) {
+                play = true;
+                ballPosX = 120;
+                ballPosY = 350;
+                ballXDir = -1;
+                ballYDir = -2;
+                paddleX = 310;
+                score = 0;
+                totalBlocks = 21;
+                map = new MapGenerator(3, 7);
+                repaint();
+            }
+        }
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {}
+
+    public void movePaddleRight() {
+        play = true;
+        paddleX += 20;
+    }
+
+    public void movePaddleLeft() {
+        play = true;
+        paddleX -= 20;
+    }
     }
