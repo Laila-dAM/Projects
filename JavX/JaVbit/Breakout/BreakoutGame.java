@@ -49,7 +49,7 @@ public class BreakoutGame extends JPanel implements KeyListener, ActionListener 
         g.setColor(Color.green);
         g.fillRect(paddleX, 550, paddleWidth, paddleHeight);
 
-        g.setColor(Color.yellow);
+        g.setColor(Color.magenta);
         g.fillOval(ballPosX, ballPosY, ballSize, ballSize);
 
          if (ballPosY > 570) {
@@ -57,7 +57,7 @@ public class BreakoutGame extends JPanel implements KeyListener, ActionListener 
             ballXDir = 0;
             ballYDir = 0;
 
-            g.setColor(Color.red);
+            g.setColor(Color.blue);
             g.setFont(new Font("Arial", Font.BOLD, 40));
             g.drawString("Game Over! ｡°(°.◜ᯅ◝°)°｡", 230, 300);
 
@@ -217,8 +217,8 @@ class MapGenerator {
                 if(map[i][j] > 0){
                     switch (i){
                             case 0 -> g.setColor(Color.red);
-                            case 1 -> g.setColor(Color.orange);
-                            case 2 -> g.setColor(Color.yellow);
+                            case 1 -> g.setColor(Color.magenta);
+                            case 2 -> g.setColor(Color.pink);
                             default -> g.setColor(Color.white);
 }
     g.fillRect(j * blockWidth + 80, i * blockHeight + 50, blockWidth, blockHeight);
