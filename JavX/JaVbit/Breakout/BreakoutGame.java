@@ -215,9 +215,22 @@ class MapGenerator {
         for(int i = 0; i < map.length; i++){
             for(int j = 0; j < map[0].length; j++){
                 if(map[i][j] > 0){
-                    
+                    switch (i){
+                            case 0 -> g.setColor(Color.red);
+                            case 1 -> g.setColor(Color.orange);
+                            case 2 -> g.setColor(Color.yellow);
+                            default -> g.setColor(Color.white);
+}
+    g.fillRect(j * blockWidth + 80, i * blockHeight + 50, blockWidth, blockHeight);
+                    g.setStroke(new BasicStroke(3));
+                    g.setColor(Color.black);
+                    g.drawRect(j * blockWidth + 80, i * blockHeight + 50, blockWidth, blockHeight);
+                    }
                 }
             }
         }
+    public void setBlockValue(int value, int row, int col){
+        map[row][col] = value;
+        }
+    
     }
-}
