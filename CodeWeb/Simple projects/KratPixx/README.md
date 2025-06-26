@@ -23,11 +23,3 @@ A simple and cute pixel art drawing web app with an interactive grid, selectable
 3. Click on the pixels in the grid to color them.
 4. Use the **Clear** button to reset the grid.
 5. Use the **Save as Image** button to download your pixel art as a PNG file.
-
-## Project Structure
-
-/project-root
-│
-├── index.html
-├── styles.css
-├── script.js
