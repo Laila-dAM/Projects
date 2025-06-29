@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang ="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Tasky - Gerenciador de Tarefas</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="tasky.png" type="image/png"/>
+          <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+    <body> 
+        <header>
+            <img src="tasky.png" alt="Tasky Logo" class="logo"/>
+            <h1>Tasky</h1>
+        </header>
+        <main class="container">
+            <section class="task-form">
+                <h2>Adicionar Nova Tarefa</h2>
+                <form id="new-task-form">
+                    <input type="text" id="title" placeholder="Título da tarefa" required/>
+                            <textarea id="description" placeholder="Descrição da tarefa" required></textarea>
+                    <input type="date" id="deadline" required/>
+                           <button type="submit" class="add-btn"><i class="fas fa-plus-circle"></i> Adicionar Tarefa</button>
+ </form>
+                </section>
+
+
+    </body>
