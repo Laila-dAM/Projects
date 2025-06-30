@@ -12,8 +12,6 @@
 
 ## Estrutura do Projeto
 
-## 📁 Estrutura do Projeto
-
 - **backend/**: código do servidor (API com Node.js)
   - `server.js`: inicia o servidor
   - `routes.js`, `controllers.js`, `models.js`: controlam as tarefas
