@@ -12,18 +12,14 @@
 
 ## Estrutura do Projeto
 
-Tasky/
-├── backend/ # API REST com Node.js
-│ ├── controllers.js
-│ ├── db.js
-│ ├── models.js
-│ ├── routes.js
-│ ├── server.js
-│ └── package.json
-├── public/ # Arquivos estáticos (frontend)
-│ ├── index.html
-│ ├── todo.html
-│ ├── style.css
-│ ├── script.js
-│ └── todo.js
-└── README.md
+## 📁 Estrutura do Projeto
+
+- **backend/**: código do servidor (API com Node.js)
+  - `server.js`: inicia o servidor
+  - `routes.js`, `controllers.js`, `models.js`: controlam as tarefas
+  - `db.js`: conexão com o banco de dados
+- **public/**: interface do usuário
+  - `index.html`, `todo.html`: páginas web
+  - `style.css`: estilos visuais
+  - `script.js`, `todo.js`: comportamentos da interface
+- `README.md`: este arquivo de explicação
