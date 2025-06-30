@@ -1,9 +1,5 @@
 const db = require('./db');
 
-// =======================
-// Usuários
-// =======================
-
 async function findUserByEmail(email) {
   const [rows] = await db.execute(
     'SELECT * FROM users WHERE email = ?',
@@ -19,10 +15,6 @@ async function createUser(name, email, hashedPassword) {
   );
   return result.insertId;
 }
-
-// =======================
-// Tarefas
-// =======================
 
 async function getTasksByUserId(userId) {
   const [rows] = await db.execute(
@@ -54,9 +46,13 @@ async function deleteTask(taskId) {
   );
 }
 
-// =======================
-// Exportação
-// =======================
+async function getTarefasPendentes(userId) {
+  const [rows] = await db.execute(
+    'SELECT * FROM tarefas WHERE usuario_id = ? AND concluida = 0',
+    [userId]
+  );
+  return rows;
+}
 
 module.exports = {
   findUserByEmail,
@@ -64,5 +60,6 @@ module.exports = {
   getTasksByUserId,
   addTask,
   updateTaskStatus,
-  deleteTask
+  deleteTask,
+  getTarefasPendentes
 };

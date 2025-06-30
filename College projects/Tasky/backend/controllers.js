@@ -1,9 +1,6 @@
 const bcrypt = require('bcrypt');
 const models = require('./models');
 
-// ==============================
-// Cadastro de Usuário
-// ==============================
 async function registerUser(req, res) {
   const { name, email, password } = req.body;
   if (!name || !email || !password) {
@@ -16,7 +13,7 @@ async function registerUser(req, res) {
       return res.status(400).json({ error: 'Email já cadastrado' });
     }
 
-    const hashedPassword = await bcrypt.hash(password, 10); // Criptografar senha
+    const hashedPassword = await bcrypt.hash(password, 10);
     const userId = await models.createUser(name, email, hashedPassword);
 
     res.json({ message: 'Cadastro realizado com sucesso', userId });
@@ -25,9 +22,6 @@ async function registerUser(req, res) {
   }
 }
 
-// ==============================
-// Login de Usuário
-// ==============================
 async function loginUser(req, res) {
   const { email, password } = req.body;
   if (!email || !password) {
@@ -54,9 +48,6 @@ async function loginUser(req, res) {
   }
 }
 
-// ==============================
-// Obter Tarefas
-// ==============================
 async function getTasks(req, res) {
   const userId = req.params.userId;
   try {
@@ -67,9 +58,17 @@ async function getTasks(req, res) {
   }
 }
 
-// ==============================
-// Adicionar Tarefa
-// ==============================
+async function getPendingTasks(req, res) {
+  const userId = req.params.userId;
+  try {
+    const tarefas = await models.getTarefasPendentes(userId);
+    res.json(tarefas);
+  } catch (err) {
+    console.error('Erro ao buscar tarefas pendentes:', err);
+    res.status(500).json({ error: 'Erro interno do servidor' });
+  }
+}
+
 async function addTask(req, res) {
   const { userId, title, description, due_date } = req.body;
 
@@ -85,9 +84,6 @@ async function addTask(req, res) {
   }
 }
 
-// ==============================
-// Atualizar Tarefa
-// ==============================
 async function updateTask(req, res) {
   const { id } = req.params;
   const { completed } = req.body;
@@ -100,9 +96,7 @@ async function updateTask(req, res) {
   }
 }
 
-// ==============================
-// Deletar Tarefa
-// ==============================
+
 async function deleteTask(req, res) {
   const { id } = req.params;
 
@@ -114,13 +108,11 @@ async function deleteTask(req, res) {
   }
 }
 
-// ==============================
-// Exportar Módulo
-// ==============================
 module.exports = {
   registerUser,
   loginUser,
   getTasks,
+  getPendingTasks,   // ✅ incluída
   addTask,
   updateTask,
   deleteTask,

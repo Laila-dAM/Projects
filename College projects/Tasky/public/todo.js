@@ -1,4 +1,3 @@
-// --- Seleção de elementos do DOM ---
 const taskForm = document.getElementById('task-form');
 const taskDateInput = document.getElementById('task-date');
 const taskTitleInput = document.getElementById('task-title');
@@ -6,7 +5,6 @@ const taskDescriptionInput = document.getElementById('task-description');
 const taskList = document.getElementById('task-list');
 const logoutBtn = document.getElementById('logout-btn');
 
-// --- Funções Auxiliares ---
 
 function createTaskElement(task) {
     const li = document.createElement('li');
@@ -114,7 +112,6 @@ async function loadTasks() {
     }
 }
 
-// --- Envio de Nova Tarefa ---
 taskForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -166,12 +163,10 @@ taskForm.addEventListener('submit', async (e) => {
     }
 });
 
-// --- Logout ---
 logoutBtn.addEventListener('click', () => {
     localStorage.removeItem('userId');
     localStorage.removeItem('userName'); // se usado
     window.location.href = 'index.html';
 });
 
-// --- Inicialização ---
 loadTasks();

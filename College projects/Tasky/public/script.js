@@ -1,4 +1,3 @@
-// Alternância entre abas
 const loginTab = document.getElementById('login-tab');
 const registerTab = document.getElementById('register-tab');
 const loginSection = document.getElementById('login-section');
@@ -20,12 +19,10 @@ function toggleTabs(activeTab) {
 loginTab.addEventListener('click', () => toggleTabs('login'));
 registerTab.addEventListener('click', () => toggleTabs('register'));
 
-// Alerta genérico
 function showAlert(message) {
   alert(message);
 }
 
-// Cadastro
 const registerForm = document.getElementById('register-form');
 registerForm.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -63,7 +60,6 @@ registerForm.addEventListener('submit', async (e) => {
   }
 });
 
-// Login
 const loginForm = document.getElementById('login-form');
 loginForm.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -92,7 +88,6 @@ loginForm.addEventListener('submit', async (e) => {
 
     showAlert(`Bem-vindo, ${data.user.name}!`);
 
-    // Salva ID do usuário no localStorage
     localStorage.setItem('userId', data.user.id);
 
     loginForm.reset();

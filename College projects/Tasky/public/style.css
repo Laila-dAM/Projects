@@ -243,7 +243,6 @@ button[type="submit"]:hover {
   color: #FF2C2C;
 }
 
-/* Responsividade */
 @media (max-width: 500px) {
   .container {
     padding: 20px;

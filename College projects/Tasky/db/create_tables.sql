@@ -1,7 +1,5 @@
--- Seleciona o banco de dados
 USE todolist;
 
--- Cria a tabela de usuários
 CREATE TABLE IF NOT EXISTS users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100) NOT NULL,
@@ -10,7 +8,6 @@ CREATE TABLE IF NOT EXISTS users (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Cria a tabela de tarefas
 CREATE TABLE IF NOT EXISTS tasks (
   id INT AUTO_INCREMENT PRIMARY KEY,
   user_id INT NOT NULL,
