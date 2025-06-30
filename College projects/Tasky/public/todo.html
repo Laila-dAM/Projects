@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TODO-LIST - Minhas Tarefas</title>
+  <link rel="icon" type="image/png" href="Logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="Logo.png" alt="Logo TODO-LIST" class="logo" />
+      <h1>Minhas Tarefas</h1>
+      <button id="logout-btn" class="logout-btn">Sair</button>
+    </header>
+
+    <section class="todo-section">
+      <form id="task-form">
+        <input
+          type="date"
+          id="task-date"
+          required
+        />
+        <input
+          type="text"
+          id="task-title"
+          placeholder="Título da tarefa"
+          required
+          autocomplete="off"
+        />
+        <textarea
+          id="task-description"
+          placeholder="Descrição da tarefa"
+          rows="3"
+          required
+        ></textarea>
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <ul id="task-list" class="task-list">
+        <!-- Tarefas vão aparecer aqui -->
+      </ul>
+    </section>
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
