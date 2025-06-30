@@ -1,17 +1,28 @@
 const db = require('./db');
 
+// =======================
+// Usuários
+// =======================
+
 async function findUserByEmail(email) {
-  const [rows] = await db.execute('SELECT * FROM users WHERE email = ?', [email]);
+  const [rows] = await db.execute(
+    'SELECT * FROM users WHERE email = ?',
+    [email]
+  );
   return rows[0];
 }
 
-async function createUser(name, email, password) {
+async function createUser(name, email, hashedPassword) {
   const [result] = await db.execute(
     'INSERT INTO users (name, email, password) VALUES (?, ?, ?)',
-    [name, email, password]
+    [name, email, hashedPassword]
   );
   return result.insertId;
 }
+
+// =======================
+// Tarefas
+// =======================
 
 async function getTasksByUserId(userId) {
   const [rows] = await db.execute(
@@ -30,12 +41,22 @@ async function addTask(userId, title, description, due_date) {
 }
 
 async function updateTaskStatus(taskId, completed) {
-  await db.execute('UPDATE tasks SET completed = ? WHERE id = ?', [completed ? 1 : 0, taskId]);
+  await db.execute(
+    'UPDATE tasks SET completed = ? WHERE id = ?',
+    [completed ? 1 : 0, taskId]
+  );
 }
 
 async function deleteTask(taskId) {
-  await db.execute('DELETE FROM tasks WHERE id = ?', [taskId]);
+  await db.execute(
+    'DELETE FROM tasks WHERE id = ?',
+    [taskId]
+  );
 }
+
+// =======================
+// Exportação
+// =======================
 
 module.exports = {
   findUserByEmail,
@@ -43,5 +64,5 @@ module.exports = {
   getTasksByUserId,
   addTask,
   updateTaskStatus,
-  deleteTask,
+  deleteTask
 };

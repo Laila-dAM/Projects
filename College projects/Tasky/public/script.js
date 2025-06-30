@@ -1,33 +1,38 @@
+// Alternância entre abas
 const loginTab = document.getElementById('login-tab');
 const registerTab = document.getElementById('register-tab');
 const loginSection = document.getElementById('login-section');
 const registerSection = document.getElementById('register-section');
 
-loginTab.addEventListener('click', () => {
-  loginTab.classList.add('active');
-  registerTab.classList.remove('active');
-  loginSection.classList.add('active');
-  registerSection.classList.remove('active');
-});
+function toggleTabs(activeTab) {
+  const isLogin = activeTab === 'login';
 
-registerTab.addEventListener('click', () => {
-  registerTab.classList.add('active');
-  loginTab.classList.remove('active');
-  registerSection.classList.add('active');
-  loginSection.classList.remove('active');
-});
+  loginTab.classList.toggle('active', isLogin);
+  registerTab.classList.toggle('active', !isLogin);
 
+  loginSection.classList.toggle('active', isLogin);
+  registerSection.classList.toggle('active', !isLogin);
+
+  loginSection.hidden = !isLogin;
+  registerSection.hidden = isLogin;
+}
+
+loginTab.addEventListener('click', () => toggleTabs('login'));
+registerTab.addEventListener('click', () => toggleTabs('register'));
+
+// Alerta genérico
 function showAlert(message) {
   alert(message);
 }
 
+// Cadastro
 const registerForm = document.getElementById('register-form');
 registerForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const name = registerForm.name.value.trim();
-  const email = registerForm.email.value.trim();
-  const password = registerForm.password.value.trim();
+  const name = registerForm['name'].value.trim();
+  const email = registerForm['email'].value.trim();
+  const password = registerForm['password'].value.trim();
 
   if (!name || !email || !password) {
     showAlert('Por favor, preencha todos os campos para cadastro.');
@@ -50,23 +55,24 @@ registerForm.addEventListener('submit', async (e) => {
 
     showAlert('Cadastro realizado com sucesso!');
     registerForm.reset();
-    loginTab.click();
+    toggleTabs('login');
 
   } catch (err) {
-    console.error(err);
+    console.error('Erro no cadastro:', err);
     showAlert('Erro de conexão com o servidor.');
   }
 });
 
+// Login
 const loginForm = document.getElementById('login-form');
 loginForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const email = loginForm.email.value.trim();
-  const password = loginForm.password.value.trim();
+  const email = loginForm['email'].value.trim();
+  const password = loginForm['password'].value.trim();
 
   if (!email || !password) {
-    showAlert('Por favor, preencha todos os campos para fazer login.');
+    showAlert('Por favor, preencha todos os campos para login.');
     return;
   }
 
@@ -85,12 +91,15 @@ loginForm.addEventListener('submit', async (e) => {
     }
 
     showAlert(`Bem-vindo, ${data.user.name}!`);
-    loginForm.reset();
 
+    // Salva ID do usuário no localStorage
+    localStorage.setItem('userId', data.user.id);
+
+    loginForm.reset();
     window.location.href = 'todo.html';
 
   } catch (err) {
-    console.error(err);
+    console.error('Erro no login:', err);
     showAlert('Erro de conexão com o servidor.');
   }
 });

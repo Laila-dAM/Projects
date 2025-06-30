@@ -19,15 +19,15 @@ body {
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(73, 66, 228, 0.3);
-  max-width: 400px;
+  max-width: 420px;
   width: 100%;
   padding: 25px 30px 40px;
+  position: relative;
 }
 
 header {
   text-align: center;
   margin-bottom: 25px;
-  position: relative;
 }
 
 .logo {
@@ -88,7 +88,7 @@ label {
 input[type="email"],
 input[type="password"],
 input[type="text"],
-input[type="text"] {
+input[type="date"] {
   padding: 10px 12px;
   border: 2px solid #E6B9DE;
   border-radius: 6px;
@@ -97,9 +97,7 @@ input[type="text"] {
   transition: border-color 0.3s ease;
 }
 
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="text"]:focus {
+input:focus {
   border-color: #4942E4;
 }
 
@@ -144,21 +142,23 @@ button[type="submit"]:hover {
 
 #task-form {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 12px;
   margin-bottom: 20px;
 }
 
-#task-input {
-  flex: 1;
+#task-form input,
+#task-form textarea {
   padding: 10px 12px;
-  font-size: 1rem;
   border: 2px solid #E6B9DE;
   border-radius: 6px;
+  font-size: 1rem;
   outline-color: #4942E4;
   transition: border-color 0.3s ease;
 }
 
-#task-input:focus {
+#task-form input:focus,
+#task-form textarea:focus {
   border-color: #4942E4;
 }
 
@@ -186,36 +186,53 @@ button[type="submit"]:hover {
 
 .task-item {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   background-color: #E6B9DE;
-  padding: 10px 14px;
+  padding: 12px 14px;
   border-radius: 8px;
   margin-bottom: 12px;
   color: #11009E;
   font-weight: 600;
   box-shadow: 0 2px 5px rgba(73, 66, 228, 0.2);
+  position: relative;
 }
 
-.task-item span {
-  flex: 1;
-  word-break: break-word;
+.task-item strong {
+  font-size: 1.1rem;
 }
 
-.task-item span.done {
+.task-item small {
+  font-size: 0.85rem;
+  color: #4942E4;
+  margin-top: 4px;
+}
+
+.task-item p {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.task-item.done {
   text-decoration: line-through;
-  color: #AAA;
+  opacity: 0.6;
 }
 
-.done-btn,
-.delete-btn {
+.task-item .done-btn,
+.task-item .delete-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
   background: none;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   cursor: pointer;
   color: #11009E;
-  margin-left: 12px;
   transition: color 0.3s ease;
+}
+
+.task-item .done-btn {
+  right: 40px;
 }
 
 .done-btn:hover {
@@ -224,4 +241,25 @@ button[type="submit"]:hover {
 
 .delete-btn:hover {
   color: #FF2C2C;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+
+  .task-item {
+    font-size: 0.95rem;
+  }
+
+  button[type="submit"],
+  #task-form button {
+    font-size: 1rem;
+  }
+
+  .logout-btn {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
 }
