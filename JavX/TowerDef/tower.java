@@ -9,7 +9,7 @@ public class tower {
     static int cityHealth = 50;
     static int wave = 1;
 
-    static Map<String, Integer> building = new LinkedHashMap<>();
+    static Map<String, Integer> buildings = new LinkedHashMap<>();
     static Map<String, Integer> buildingCosts = Map.of(
         "Tower", 30,
         "Wall", 20,
@@ -46,31 +46,30 @@ public class tower {
                 System.out.println("\nWave: " + wave + "  Money: $" + money + "  City Health: " + cityHealth + " ♥");
                 System.out.println("Buildings:");
                 buildings.forEach((b, q) -> {
-                    String kaomoji = swing(b) {
+                    String kaomoji = switch (b) {
                         case "Tower" -> "( •_•)>⌐■-■";
                         case "Wall" -> "(╯°□°）╯︵ ┻━┻";
                         case "Farm" -> "(ᵔᴥᵔ)";
                         default -> "";
                     };
-                    System.out.println(" - " + b + ": " + q " " + kaomoji);
+                    System.out.println(" - " + b + ": " + q + " " + kaomoji);
                 });
                 
                 System.out.println("\nCity ASCII:");
                 for (int i = 0; i < buildings.get("Wall"); i++) System.out.print("🧱");
                 System.out.println();
 
-                for (int i = 0; i < buildings.get("Tower"; i++) System.out.print("🏰");
+                for (int i = 0; i < buildings.get("Tower"); i++) System.out.print("🏰");
                 System.out.println();
 
                 for (int i = 0; i < buildings.get("Farm"); i++) System.out.print("🌾");
                 System.out.println();
-                )
-
+            }
                 static void cityIncome() {
                     int income = buildings.get("Farm") * buildingIncome.get("Farm");
                     money += income;
                     if (income > 0){
-                        JOptionPane.showMessageDialog(null, "Farms produced $" + income + "this wave! (＾▽＾)");
+                        JOptionPane.showMessageDialog(null, "Farms produced $" + income + " this wave! (＾▽＾)");
 
                     }
                 }
@@ -83,50 +82,48 @@ public class tower {
                     JOptionPane.PLAIN_MESSAGE,
                     null,
                     options,
-                    options[0];)
+                    options[0]);
 
                 if (choice < 3) {
-                    String building = swing (choice) {
+                    String building = switch (choice) {
                         case 0 -> "Tower";
                         case 1 -> "Wall";
                         case 2 -> "Farm";
-                        default -> "";                    }
+                        default -> "";                    
                 };
+
                 if (money >= buildingCosts.get(building)) {
                     money -= buildingCosts.get(building);
                     buildings.put(building, buildings.get(building) + 1);
-                    JOptionPane.showMessageDialog(null, 
-                    building + "built ＼(＾▽＾)／");
+                    JOptionPane.showMessageDialog(null, building + " built ＼(＾▽＾)／");
                 } else {
-                    JOptionPane.showMessageDialog(null, 
-                    "Not enough money! (╯︵╰,)");
-
+                    JOptionPane.showMessageDialog(null, "Not enough money! (╯︵╰,)");
                 }
-                } else {
-                    JOptionPane.showMessageDialog(null,
-                    "Skipping building phase (¬‿¬)");
 
-                }
+        } else {
+                    JOptionPane.showMessageDialog(null, "Skipping building phase (¬‿¬)");
+
+        }
     }
+
     static void enemyAttack() {
         int enemyAttack = wave * 10 + rand.nextInt(11);
         int defend = 0;
         for (var b : buildings.keySet()) {
-            defense += buildings.get(b) * buildingDefense.get(b);
+            defend += buildings.get(b) * buildingDefense.get(b);
 
         }
         JOptionPane.showMessageDialog(null,
-            "Enemies attack with power " + enemyAttack + " (ง'̀-'́)ง\nYour defense is " + defense);
+            "Enemies attack with power " + enemyAttack + " (ง'̀-'́)ง\nYour defense is " + defend);
 
-        int damage = enemyAttack - defense;
+        int damage = enemyAttack - defend;
         if (damage > 0){
             cityHealth -= damage;
-            JOptionPane.showMessageDialog(null,
-            "Your city took" + damage + " damage! (ಥ﹏ಥ)");
+            JOptionPane.showMessageDialog(null, "Your city took " + damage + " damage! (ಥ﹏ಥ)");
         } else {
-            JOptionPane.showMessageDialog(null, 
-            "You defended the city perfectly!  (≧◡≦)");
-            
+            JOptionPane.showMessageDialog(null, "You defended the city perfectly!  (≧◡≦)");
+
         }
     }
+
 }
