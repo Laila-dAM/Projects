@@ -52,6 +52,81 @@ public class tower {
                         case "Farm" -> "(ᵔᴥᵔ)";
                         default -> "";
                     };
-                })
+                    System.out.println(" - " + b + ": " + q " " + kaomoji);
+                });
+                
+                System.out.println("\nCity ASCII:");
+                for (int i = 0; i < buildings.get("Wall"); i++) System.out.print("🧱");
+                System.out.println();
+
+                for (int i = 0; i < buildings.get("Tower"; i++) System.out.print("🏰");
+                System.out.println();
+
+                for (int i = 0; i < buildings.get("Farm"); i++) System.out.print("🌾");
+                System.out.println();
+                )
+
+                static void cityIncome() {
+                    int income = buildings.get("Farm") * buildingIncome.get("Farm");
+                    money += income;
+                    if (income > 0){
+                        JOptionPane.showMessageDialog(null, "Farms produced $" + income + "this wave! (＾▽＾)");
+
+                    }
+                }
+                static void playerBuild() {
+                    String[] options = {"Build Tower ($30)", "Build Wall ($20)", "Build Farm ($25)", "Skip Building"};
+                    int choice = JOptionPane.showOptionDialog(null, 
+                    "Choose what to build:",
+                    "Build Menu",
+                    JOptionPane.DEFAULT_OPTION,
+                    JOptionPane.PLAIN_MESSAGE,
+                    null,
+                    options,
+                    options[0];)
+
+                if (choice < 3) {
+                    String building = swing (choice) {
+                        case 0 -> "Tower";
+                        case 1 -> "Wall";
+                        case 2 -> "Farm";
+                        default -> "";                    }
+                };
+                if (money >= buildingCosts.get(building)) {
+                    money -= buildingCosts.get(building);
+                    buildings.put(building, buildings.get(building) + 1);
+                    JOptionPane.showMessageDialog(null, 
+                    building + "built ＼(＾▽＾)／");
+                } else {
+                    JOptionPane.showMessageDialog(null, 
+                    "Not enough money! (╯︵╰,)");
+
+                }
+                } else {
+                    JOptionPane.showMessageDialog(null,
+                    "Skipping building phase (¬‿¬)");
+
+                }
+    }
+    static void enemyAttack() {
+        int enemyAttack = wave * 10 + rand.nextInt(11);
+        int defend = 0;
+        for (var b : buildings.keySet()) {
+            defense += buildings.get(b) * buildingDefense.get(b);
+
+        }
+        JOptionPane.showMessageDialog(null,
+            "Enemies attack with power " + enemyAttack + " (ง'̀-'́)ง\nYour defense is " + defense);
+
+        int damage = enemyAttack - defense;
+        if (damage > 0){
+            cityHealth -= damage;
+            JOptionPane.showMessageDialog(null,
+            "Your city took" + damage + " damage! (ಥ﹏ಥ)");
+        } else {
+            JOptionPane.showMessageDialog(null, 
+            "You defended the city perfectly!  (≧◡≦)");
+            
+        }
     }
 }
