@@ -39,5 +39,19 @@ public class tower {
             enemyAttack();
             wave++;
         }
+        JOptionPane.showMessageDialog(null, "You city has fallen... (╥﹏╥) Game Over.");
+        System.exit(0);
+    }
+    static void drawCity(){
+                System.out.println("\nWave: " + wave + "  Money: $" + money + "  City Health: " + cityHealth + " ♥");
+                System.out.println("Buildings:");
+                buildings.forEach((b, q) -> {
+                    String kaomoji = swing(b) {
+                        case "Tower" -> "( •_•)>⌐■-■";
+                        case "Wall" -> "(╯°□°）╯︵ ┻━┻";
+                        case "Farm" -> "(ᵔᴥᵔ)";
+                        default -> "";
+                    };
+                })
     }
 }
