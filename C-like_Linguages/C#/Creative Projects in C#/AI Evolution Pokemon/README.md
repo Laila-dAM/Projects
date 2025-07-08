@@ -2,30 +2,51 @@
 
 ---
 
-# 🧬 AI Evolution Pokémon
+# AI Evolution Pokemon
 
 ## What is it?
 
-A simple browser-based simulation where Pokémon-like creatures evolve over time using basic AI principles. The project demonstrates how artificial evolution works in a visual and interactive way.
+A simple console-based simulation that models the evolution of fictional creatures (Pokémon-style) under different environmental conditions. Users can configure climate, mutation rate, resource scarcity, and observe how a population adapts across generations.
 
-## How to play?
+## How to use?
 
-1. Download or clone this repository.
+1. Make sure you have [.NET SDK](https://dotnet.microsoft.com/en-us/download) installed.
 
-2. Open the project folder and double-click the `index.html` file.
+2. Open a terminal in the project folder and build the program:
 
-3. Click **Start** to begin the simulation and watch the evolution unfold.
+```bash
+dotnet build
+```
 
-4. Restart or tweak settings directly in the interface as you wish.
+3. Run the simulation:
+```bash
+dotnet run
+```
 
-## Features
+4. Follow the prompts in the terminal to:
+- Choose climate (hot, cold, or neutral)
+- Set a mutation rate (between 0.01 and 1.0)
+- Select resource scarcity level (low, medium, or high)
+- Define number of generations and initial population size
 
-- Evolution simulation through generations
-- Visual feedback of improving traits
-- Simple AI logic (mutation, selection)
-- No installation required — just open in browser
-- Built with HTML, CSS, and JavaScript
+Features
+- Customizable environmental parameters
+- Simulated evolution across generations
+- Fitness evaluation and natural selection logic
+- Random mutations and reproduction
+- CLI-based, no external libraries
 
+Folder Structure
+
+```bash
+
+📁 AI Evolution Pokemon/
+├── Program.cs               # Main logic and simulator
+├── AI Evolution Pokemon.csproj
+├── obj/                     # Build artifacts
+├── packages-microsoft-prod.deb
+└── README.md                # Project info
+```
 ---
 
 <p align="center">૮ ˙Ⱉ˙ ა rawr!</p>
