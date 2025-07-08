@@ -46,4 +46,4 @@ dotnet run
 
 ---
 
-<p align="center">૮ ˙Ⱉ˙ ა learn or perish</p> ” 
+<p align="center">૮ ˙Ⱉ˙ ა learn or perish</p>
