@@ -42,6 +42,10 @@ npx serve .
 - Simple and clean interface
 - Built with Node.js, Express, Socket.IO, HTML, CSS and JavaScript
 
+## Demo
+
+📹 [Watch it run](link)
+
 ---
 
 <p align="center">૮ ˙Ⱉ˙ ა rawr!</p>
