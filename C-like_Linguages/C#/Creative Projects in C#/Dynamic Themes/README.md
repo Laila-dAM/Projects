@@ -2,47 +2,60 @@
 
 ---
 
-# Dynamic Themes
+# CosmoX
 
 ## What is it?
 
-A C# console application that extracts dominant colors from an image, generates a color theme, and uploads it to a Figma file using Figma's API. It automates theme creation based on any image you provide.
+A complex C# project implementing a game-like system with multiple components managing events, rendering maps, resources, and core game logic. The main program initializes and starts the game through the `GameManager` class.
 
 ## How to use?
 
 1. Make sure you have the [.NET SDK](https://dotnet.microsoft.com/en-us/download) installed.
 
-2. Open a terminal in the project folder and build the project:
+2. Open a terminal in the project root folder and build the project:
 
 ```bash
 dotnet build
 ```
 
-3. Run the application:
+3. Run the game:
+
+dotnet run --project src
+
+4. The game will start running based on the logic inside:
 
 ```bash
-dotnet run
+GameManager.StartGame()
 ```
 
-4. When prompted, enter:
-- The path to the image file you want to analyze
-- Your Figma API token (get it from your Figma account settings)
-- The Figma file key where you want to upload the generated theme
-
 ## Features
-- Extracts dominant colors from images using bitmap processing
-- Generates hex color codes to form a theme
-- Uploads the theme dynamically to a Figma file via Figma API
-- Uses asynchronous HTTP calls for API interaction
-- Simple CLI interface for easy use
+
+- Modular game components including event system, map renderer, and resource manager
+- Game logic encapsulated in GameManager
+- ASCII art and symbol assets for visual elements
+-Automated build and run scripts included
+- Basic unit tests in tests/GameLogicTests.cs
 
 ## Folder Structure
+
 ```bash
-📁 Dynamic Themes/
-├── DynamicThemes.csproj         # Project configuration
-├── Program.cs                  # Main application logic
-├── obj/                        # Build artifacts
-└── README.md                   # Project documentation
+📁 CosmoX/
+├── assets/                   # Game assets (ASCII art, symbols)
+│   └── ascii_art/
+│       ├── events_ascii.txt
+│       └── map_symbols.txt
+├── build/                    # Build and run scripts
+│   ├── build.sh
+│   └── run_game.sh
+├── src/                      # Source code
+│   ├── EventSystem.cs
+│   ├── GameManager.cs
+│   ├── MapRenderer.cs
+│   ├── Program.cs            # Main entry point
+│   └── ResourceManager.cs
+├── tests/                    # Unit tests
+│   └── GameLogicTests.cs
+└── README.md                 # Project documentation
 ```
 
 ## Demo
