@@ -1,2 +1,10 @@
-# Scripting_and_Automation
-Projects in Python and Bash language
+
+ғᴏʟᴅᴇʀs 📁
+
+---
+
+Projects in Python and Bash language.
+
+---
+
+<p align="center">૮ ˙Ⱉ˙ ა rawr!</p>
