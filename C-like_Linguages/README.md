@@ -2,17 +2,17 @@
 
 ---
 
-# C-like_Languages
+# C-like_Linguages
 
 This folder contains projects and exercises in C-like programming languages:
 
-- **W** 
-Projects and code written in the C programming language.
+- **C**  
+  Projects and code written in the C programming language.
 
-- **W#** 
-Programs and experiments developed using C#.
+- **C#**  
+  Programs and experiments developed using C#.
 
-- **C++** 
-Projects and practice code in C++ language.
+- **C++**  
+  Projects and practice code in C++ language.
 
 Explore each folder to see code examples and small projects in these languages.
