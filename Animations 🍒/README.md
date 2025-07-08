@@ -14,4 +14,4 @@ This folder contains my animation artworks organized into two categories:
 
 ---
 
-૮ ˙Ⱉ˙ ა rawr!
+<p align="center">૮ ˙Ⱉ˙ ა rawr!</p>
