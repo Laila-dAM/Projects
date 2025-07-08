@@ -3,7 +3,7 @@
 
 ---
 
-# Folder with complex projects in C.
+Folder with complex projects in C.
 
 ---
 
