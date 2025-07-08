@@ -47,6 +47,11 @@ Folder Structure
 ├── packages-microsoft-prod.deb
 └── README.md                # Project info
 ```
+
+## Demo
+
+📹 [Watch it run](link)
+
 ---
 
 <p align="center">૮ ˙Ⱉ˙ ა rawr!</p>
