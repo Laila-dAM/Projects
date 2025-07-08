@@ -36,4 +36,4 @@ Larger and more complete Java projects, often involving games or full systems.
 
 ---
 
-૮ ˙Ⱉ˙ ა rawr!
+<p align="center">૮ ˙Ⱉ˙ ა rawr!</p>
