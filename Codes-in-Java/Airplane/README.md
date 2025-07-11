@@ -1,1 +1,57 @@
-Create a simple flight simulator where the user can control the altitude and speed of an airplane and try to keep the aircraft stable during flight. Components: The program should allow the user to adjust the airplane's speed and altitude in real-time. It should simulate the effects of acceleration and deceleration on the flight, affecting the airplane's behavior (such as ascents or descents). The user must maintain the airplane at a constant altitude and within a safe speed range, avoiding collisions with the ground or other obstacles. Challenge: Add a simulation of weather conditions, such as wind and turbulence, which affect the flight and require the pilot to adjust controls to maintain aircraft stability.
+ᴄᴏᴅᴇ 👾
+
+---
+
+# Airplane
+
+## What is it?
+
+A Java console simulation where you control a virtual airplane by adjusting its altitude and speed while reacting to random weather conditions like wind and turbulence. Your mission is to keep the aircraft flying safely without crashing or stalling.
+
+## How to play?
+
+1. Make sure you have the [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html) installed.
+
+2. Open a terminal in the project folder and compile the game:
+
+```bash
+javac air.java
+```
+
+3. Run the simulation:
+
+```bash
+java air
+```
+
+4. During execution, you will be prompted to:
+
+- Increase or decrease the altitude
+- Increase or decrease the speed
+- Monitor wind and turbulence
+- Avoid crashing, stalling, or flying too fast
+
+## Features
+
+- Console interface for altitude and speed control
+- Randomized weather simulation (wind speed and turbulence)
+- Alerts for extreme flight conditions
+- Logical flight limits and crash detection
+- Looping gameplay until safe exit or game over
+
+## Folder Structure
+
+```bash
+📁 Airplane/
+├── air.java                # Main application code
+├── air.mp4                 # Demo video of the simulation
+└── README.md               # Project documentation
+```
+
+## Demo
+
+📹 [Watch it run](link)
+
+---
+
+<p align="center">૮ ˙Ⱉ˙ ა learn or perish</p>
