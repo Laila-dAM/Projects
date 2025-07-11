@@ -1,17 +1,53 @@
-# Memory Matrix
+ᴄᴏᴅᴇ 👾
 
-Memory Matrix – A system's memory has been corrupted! Reconstruct information stored in logical blocks by finding patterns.
+---
+
+# Memorytrix
+
+## What is it?
+
+A C console game that tests your short-term memory by displaying a randomized pattern of blocks and challenging you to reconstruct it from memory. Perfect for sharpening your focus (or melting your brain cells).
+
+## How to play?
+
+1. Compile the main C file:
+
+```bash
+gcc memorytrix -o memorytrix
+```
+
+2. Run the game:
+
+```bash
+./memorytrix
+```
+
+3. Gameplay flow:
+
+- A 5x5 grid will show a random pattern using "█" and "·".
+- You’ll have a few seconds to memorize it.
+- The screen clears and you must recreate the pattern by entering 1 for block (█) and 0 for dot (·) for each cell.
+- If your memory is perfect, you win. If not… well, try again.
 
 ## Features
-- A 5x5 matrix is ​​randomly generated with binary values ​​(0 or 1).
-- The pattern is displayed for a short period before being hidden.
-- The player inputs their reconstruction of the pattern.
-- The program checks whether the player's input matches the original pattern and provides feedback.
+- Generates randomized visual patterns (5x5 grid)
+- Terminal-based visual feedback using Unicode blocks
+- Memory-based challenge with time pressure
+- Clean screen transition for realistic challenge
+- Simple CLI interface and fun messages
 
-## How to play
-1. Run the program.
-2. A 5x5 matrix is ​​displayed with a random pattern of `█` and `·`.
-3. Memorize the pattern before it disappears.
-4. Reconstruct the pattern by inputting a matrix of `0`s and `1`s.
-5. If your input matches the original pattern, you win!
-6. If your input is incorrect, you lose, and the program informs you of the failure.
+## Folder Structure
+```bash
+📁 Memorytrix/
+├── memorytrix              # Compiled executable
+├── Trinity.c               # Bonus/extra code file (not used in game)
+├── README.md               # Project documentation
+```
+
+## Demo
+
+📹 [Watch it run](link)
+
+---
+
+<p align="center">૮ ˙Ⱉ˙ ა learn or perish</p>
