@@ -1,32 +1,56 @@
-# Reverse Logic Game
+ᴄᴏᴅᴇ 👾
 
-The **Reverse Logic** game! This is a simple text-based game where your task is to find the opposite of a given rule.
+---
 
-## Description
+# Reverse Logic
 
-In this game, you are given different puzzles. Each puzzle has a rule, and your goal is to think of the opposite of that rule.
+## What is it?
 
-For example:
-- If the rule says "If the alarm goes off, it's time to wake up", the opposite might be "If the alarm is off, it's time to sleep."
+A C console game that challenges your brain with twisted logical statements. Instead of following a rule, your task is to think backwards — identifying the opposite meaning and providing clever counter-responses to common situations.
 
-You will have three attempts to answer each puzzle correctly. If you fail three times, the game is over. If you solve all the puzzles, you win!
+## How to play?
+
+1. Compile the main C file:
+
+```bash
+gcc Reverse.c -o Reverse
+```
+
+2. Run the game:
+
+```bash
+./Reverse
+```
+
+3. Gameplay instructions:
+- You'll receive a "normal" rule (e.g., If the alarm rings, wake up).
+- You'll be asked to provide the opposite condition or consequence.
+- You have 3 attempts per challenge to get it right.
+- Solve all 10 challenges to prove your reverse reasoning skills!
+
+> Tip: Some answers accept variations like "alarm is off" or "no alarm" — use your wits.
 
 ## Features
 
-- 10 interesting logic puzzles.
-- 3 attempts per puzzle.
-- Fun ASCII art interface.
-- User-friendly and interactive game design.
+- 10 creative logic-reversal challenges
+- Dynamic input checking with flexible answers
+- Limited attempts for added tension
+- Fun feedback with expressive emoji-style reactions
+- CLI interface with clean flow and formatting
 
-## How to play
+## Folder Structure
 
-1. When you start the game, you will see an introductory screen.
-2. Each puzzle will give you a rule, and you need to answer with the opposite.
-3. After you type your answer, the game will check if it is correct. If it is correct, you move on to the next challenge. If it is incorrect, you lose a try.
-4. The game ends when you complete all the challenges or run out of tries.
+```bash
+📁 Chaos/
+├── Reverse                # Compiled game binary
+├── Reverse.c              # Game source code
+└── README.md              # Project documentation
+```
 
-## Game examples
+## Demo
 
-### Challenge 1:
-- **Rule**: If the alarm goes off, it is time to wake up.
-- **Opposite**: If the alarm is off, what is happening to you?
+📹 [Watch it run](link)
+
+---
+
+<p align="center">૮ ˙Ⱉ˙ ა learn or perish</p>
