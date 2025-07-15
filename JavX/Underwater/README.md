@@ -1,25 +1,56 @@
-# Simple Underwater Game
+ᴄᴏᴅᴇ 👾
 
-This is a simple console-based game where the player navigates through an underwater environment, collects pearls, and avoids predators.
+---
 
-## Game Features
+# Underwater 
 
-- **Player Movement**: The player can move up, down, left, or right using the `WASD` keys.
-- **Score System**: The player earns points by collecting pearls (`*`).
-- **Predators**: The player must avoid predators (`X`). If the player collides with a predator, the game ends.
-- **Pop-up Messages**: The game uses pop-up messages to inform the player about the game status, such as collecting pearls or being eaten by a predator.
+## What is it?
 
-## Game Controls
+A Java console game with a splash of ASCII style.  
+Swim through a grid-based ocean, collect pearls (`*`), and avoid deadly predators (`X`).  
+Move using WASD, see your score grow, and survive the deep!
 
-- **W**: Move up
-- **S**: Move down
-- **A**: Move left
-- **D**: Move right
+## How to play?
 
-## How to Play
+1. Make sure you have the [Java JDK](https://www.oracle.com/java/technologies/javase-downloads.html) installed.
 
-1. Run the program.
-2. Use the `WASD` keys to move your player (`O`) around the map.
-3. Collect pearls (`*`) to increase your score.
-4. Avoid predators (`X`). If you collide with one, the game ends.
-5. The game will show pop-up messages for actions like collecting pearls or losing the game.
+2. Open a terminal in the project folder and compile the game:
+
+```bash
+javac game.java
+```
+
+3. Run the game:
+```bash
+javac SurvivalGame
+```
+
+4. When prompted, enter:
+
+- A movement key: W (up), A (left), S (down), or D (right)
+
+## Features
+
+- 2D ASCII map rendered directly in the console
+- Collectibles (*) increase your score
+- Enemies (X) end the game on contact
+- Pop-up messages using Swing for feedback
+- Basic real-time movement via WASD input
+- Simple and clean structure for beginners
+
+## Folder Structure
+
+```bash
+📁 Underwater/
+├── game.java         # Main game logic
+├── game.class        # Compiled bytecode
+└── README.md         # Project documentation
+```
+
+## Demo
+
+📹 [Watch it run](link)
+
+---
+
+<p align="center">૮ ˙Ⱉ˙ ა learn or perish</p>
