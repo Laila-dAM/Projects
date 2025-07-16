@@ -63,7 +63,7 @@ or, on Unix‑like systems, use the helper script:
 
 ## Demo
 
-📹 [Watch it run](link)
+📹 [Watch it run](https://drive.google.com/file/d/1UApslKY_sNPV2AdLipbvlp9ySJUN5ChI/view?usp=sharing)
 
 ---
 
