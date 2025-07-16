@@ -22,7 +22,7 @@ else {
             Console.WriteLine("Not enough construction materials.");
 }
 }
-public void ManagerResources() {
+public void ManageResource() {
     Console.WriteLine("Managing resources...");
 }
 }

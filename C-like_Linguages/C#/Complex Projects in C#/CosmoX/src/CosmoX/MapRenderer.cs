@@ -1,7 +1,7 @@
 using System;
 class MapRenderer {
 public void RenderMap(){
-    Cosole.Clear();
+    Console.Clear();
     Console.WriteLine("Map:");
     Console.WriteLine("#####");
     Console.WriteLine("# * #");
