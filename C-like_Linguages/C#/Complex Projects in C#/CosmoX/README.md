@@ -1,47 +1,70 @@
-# ASCII Space Colonization Simulator
+ᴄᴏᴅᴇ 👾
 
-Welcome to the **ASCII Space Colonization Simulator**, a text-based strategy game where players manage resources, solve environmental challenges, and make critical decisions to establish and maintain a successful space colony. The game features an immersive ASCII-based interface and blends strategic gameplay with physics-based simulations.
+---
+
+# CosmoX 
+
+## What is it?
+
+CosmoX is a cross‑platform C# console adventure game that lets you explore a procedurally‑generated galaxy rendered entirely in ASCII art.
+Under the hood it uses an event‑driven architecture, a lightweight resource manager, and a modular map renderer to deliver an old‑school, terminal‑only experience.
+
+## How to play?
+
+1. Install the [.NET SDK](https://dotnet.microsoft.com/en-us/download) (version 8.0 or later).
+
+2. Open a terminal at the project root and build:
+
+```bash
+dotnet build
+```
+
+3. Launch the game:
+
+```bash
+dotnet run --project src
+```
+or, on Unix‑like systems, use the helper script:
+
+```bash
+./build/run_game.sh
+```
 
 ## Features
 
-- **ASCII Map**: Navigate planets, bases, and resources using a visually intuitive map where symbols represent different elements:
-  - `#`: Mountains
-  - `~`: Water
-  - `*`: Resources
-  - Other symbols for bases, events, and terrain.
-  
-- **Resource Management**: Monitor and control key resources such as:
-  - Food
-  - Oxygen
-  - Energy
-  - Construction Materials
+- **ASCII Map Renderer –** draws planets, nebulas, and stations using customizable symbols.
+- **Event System –** random or scripted events (pirate attacks, distress calls, anomalies) keep every play‑through unique.
+- **Resource Manager –** handles energy, hull integrity, crew morale, and supplies; choices matter.
+- **Unit Tests –** core logic covered by xUnit tests in the tests/ folder.
+- **Portable Build Scripts –** build.sh and run_game.sh for quick builds on Linux/macOS; Windows supported via dotnet CLI.
+- **Zero Dependencies –** pure C# / .NET 8 console app, no external libraries required.
 
-- **Dynamic Events**: Encounter unpredictable scenarios like:
-  - Environmental challenges: Dust storms, volcanic eruptions.
-  - Technical problems: Equipment malfunctions, resource shortages.
+## Folder Structure
 
-- **Strategic Decisions**: Make impactful choices to:
-  - Expand your base.
-  - Explore new areas.
-  - Optimize resource usage.
+```bash
+📁 CosmoX/
+├── assets/
+│   └── ascii_art/
+│       ├── events_ascii.txt      # ASCII frames used by the event system
+│       └── map_symbols.txt       # Glyph palette for the map renderer
+├── build/
+│   ├── build.sh                  # Unix helper to build the game
+│   └── run_game.sh               # Unix helper to run the game
+├── src/
+│   ├── EventSystem.cs            # Handles in‑game events
+│   ├── GameManager.cs            # Game loop & high‑level orchestration
+│   ├── MapRenderer.cs            # Draws the star map
+│   ├── ResourceManager.cs        # Manages player resources
+│   └── Program.cs                # Entry point
+├── tests/
+│   └── GameLogicTests.cs         # xUnit tests
+└── README.md                     # You are here
+```
 
-- **Exploration**: Send teams to uncover hidden areas of the ASCII map and gather valuable resources.
+## Demo
 
-## Technologies
+📹 [Watch it run](link)
 
-This project uses a combination of C# and C++ to deliver a dynamic and seamless experience:
-- **C#**: Handles the game’s interface, logic, and user interactions.
-- **C++**: Implements simulations for physics (gravity, movement) and resource optimization.
+---
 
-## Challenges
-
-Developing this game involves overcoming key challenges:
-1. Creating an engaging and dynamic experience using a purely ASCII-based interface.
-2. Designing intuitive and functional ASCII symbols and descriptions for effective gameplay.
-3. Implementing an unpredictable event system to keep gameplay challenging without relying on graphics or sound.
-
-## Getting Started
-
-### Prerequisites
-- C# Compiler (e.g., .NET SDK)
-- C++ Compiler (e.g., GCC, Clang, or MSVC)
+<p align="center">૮ ˙Ⱉ˙ ა learn or perish</p>
