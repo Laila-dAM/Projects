@@ -1,11 +1,11 @@
 using System;
-using System.Collections.Generic
+using System.Collections.Generic;
 using System.Linq;
 
 class Program {
     static void Main(string[] args) {
         Console.WriteLine("Welcome to the AI Evolution Simulato!");
-        console.Write("Enter climate type (hot, cold, neutral): ");
+        Console.Write("Enter climate type (hot, cold, neutral): ");
         string climate = Console.ReadLine().ToLower();
 
         Console.Write("Enter mutation rate (0.01 - 1.0): ");
@@ -117,6 +117,7 @@ class Pokemon {
 public Pokemon Mate(Pokemon partner){
     int newSpeed = (Speed + partner.Speed) / 2;
     int newPower = (Power + partner.Power) / 2;
+    int newDefense = (Defense + partner.Defense) / 2;
 
     return new Pokemon(newSpeed, newPower, newDefense);
 }

@@ -1,0 +1,14 @@
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/bin/Debug/net7.0/AI Evolution Pokemon
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/bin/Debug/net7.0/AI Evolution Pokemon.deps.json
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/bin/Debug/net7.0/AI Evolution Pokemon.runtimeconfig.json
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/bin/Debug/net7.0/AI Evolution Pokemon.dll
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/bin/Debug/net7.0/AI Evolution Pokemon.pdb
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/obj/Debug/net7.0/AI Evolution Pokemon.GeneratedMSBuildEditorConfig.editorconfig
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/obj/Debug/net7.0/AI Evolution Pokemon.AssemblyInfoInputs.cache
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/obj/Debug/net7.0/AI Evolution Pokemon.AssemblyInfo.cs
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/obj/Debug/net7.0/AI Evolution Pokemon.csproj.CoreCompileInputs.cache
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/obj/Debug/net7.0/AI Evolution Pokemon.dll
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/obj/Debug/net7.0/refint/AI Evolution Pokemon.dll
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/obj/Debug/net7.0/AI Evolution Pokemon.pdb
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/obj/Debug/net7.0/AI Evolution Pokemon.genruntimeconfig.cache
+/home/lailamota238/Projects/C-like_Linguages/C#/Creative Projects in C#/AI Evolution Pokemon/obj/Debug/net7.0/ref/AI Evolution Pokemon.dll
