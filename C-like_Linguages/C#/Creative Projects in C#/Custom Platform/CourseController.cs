@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Mvc;
+
 [Route("api/[controller]")]
 [ApiController]
 public class CourseController : ControllerBase {
@@ -5,5 +7,10 @@ public class CourseController : ControllerBase {
 
     public CourseController(RecommendationService recommendationService) {
         _recommendationService = recommendationService;
+    }
+
+    [HttpGet]
+    public IActionResult GetCourses() {
+        return Ok("API está funcionando!");
     }
 }
