@@ -1,5 +1,4 @@
-ғᴏʟᴅᴇʀs 📁
-
+Folders 📁
 ---
 
 # C# Projects
@@ -15,6 +14,5 @@ This folder contains projects developed in C#, organized by complexity and focus
 - **Complex Projects in C#**  
   Larger and more structured C# applications, possibly involving multiple files, classes, or external libraries.
 
----
-
-<p align="center">૮ ˙Ⱉ˙ ა rawr!</p>
+--- 
+<p align="center"> ૮ ˙Ⱉ˙ ა ʙᴜɴxɪᴇ.ᴢɪᴘ </p>
