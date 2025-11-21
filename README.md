@@ -54,3 +54,6 @@ By keeping everything in one well-structured repository, I can track my growth o
 
 Feel free to explore the folders and projects.  
 More improvements, documentation, and new projects are coming soon!
+
+--- 
+<p align="center"> ૮ ˙Ⱉ˙ ა ʙᴜɴxɪᴇ.ᴢɪᴘ </p>
