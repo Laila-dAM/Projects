@@ -17,6 +17,5 @@ This folder contains projects and exercises in C-like programming languages:
 
 Explore each folder to see code examples and small projects in these languages.
 
----
-
-<p align="center">૮ ˙Ⱉ˙ ა rawr!</p>
+--- 
+<p align="center"> ૮ ˙Ⱉ˙ ა ʙᴜɴxɪᴇ.ᴢɪᴘ </p>
