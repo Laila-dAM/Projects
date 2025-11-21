@@ -1,39 +1,44 @@
-## ɴᴏᴛᴇs: ғᴏʟᴅᴇʀs 📁 ᴄᴏᴅᴇ 👾
+# 📁 Projects Repository Overview
 
-## 📁 sᴜʙғᴏʟᴅᴇʀs ɪɴ `_Projects/` ⋆⭒˚.⋆
+This repository contains an organized collection of my projects, studies, exercises, and experiments.
 
-> A categorized view of my folders and repositories
+To keep navigation clear:
+- 📁 = folder
+- 👾 = project or code file
 
-1. **ᴀɴɪᴍᴀᴛɪᴏɴs** ₊˚⊹  
-Visual animations, sprite sheets, and effects for games or standalone art projects.
+## 📁 Subfolders in _Projects/
 
-2. **ᴄᴏᴅᴇs ɪɴ ᴊᴀᴠᴀ** ₊˚⊹  
-Java exercises and logic-focused programs, exploring OOP, basic UIs, and more.
+Below is a categorized overview of the main directories in this repository:
 
-3. **ᴄᴏʟʟᴇɢᴇ ᴘʀᴏᴊᴇᴄᴛs** ₊˚⊹  
-Academic projects using multiple languages and technologies from my IT coursework.
+1. 🍒 Animations  
+   Visual animations, sprite sheets, and graphical effects for games or standalone art projects.
 
-4. **ᴄ_ɢᴀᴍᴇx** ₊˚⊹  
-Simple game prototypes in C language, made to experiment with mechanics and structure.
+2. ☕ Codes in Java  
+   Java exercises, object-oriented programming practice, and introductory applications.
 
-5. **ᴄᴏᴅᴇs ɪɴ ʀ** ₊˚⊹  
-Scripts focused on data visualization, statistical analysis, and plotting using R.
+3. 🎓 College Projects  
+   Academic projects from computer science and IT coursework, using multiple languages and tools.
 
-6. **ᴅᴀᴛᴀʙᴀsᴇ** ₊˚⊹  
-SQL scripts, relational models, and exercises with database logic and queries.
+4. 🕹️ C_GameX  
+   Simple game prototypes written in C to test mechanics, logic, and project structure.
 
-7. **sᴄʀɪᴘᴛɪɴɢ_ᴀɴᴅ_ᴀᴜᴛᴏᴍᴀᴛɪᴏɴ** ₊˚⊹  
-Bash and Python scripts to automate tasks, clean files, organize folders, etc.
+5. 📊 Codes in R  
+   Scripts for statistics, data visualization, and plotting in the R language.
 
-8. **ᴄ-ʟɪᴋᴇ_ʟɪɴɢᴜᴀɢᴇs** ₊˚⊹  
-Projects made using C++, C#, and Assembly — focusing on syntax and performance.
+6. 🗄️ Database  
+   SQL queries, relational diagrams, modeling exercises, and database logic practice.
 
-9. **ᴄᴏᴅᴇᴡᴇʙ** ₊˚⊹  
-Front-end projects and web experiments using HTML, CSS, and JavaScript.
+7. ⚙️ Scripting and Automation  
+   Bash, Python, and task-automation scripts to organize files and optimize workflows.
 
-10. **ᴊᴀᴠx** ₊˚⊹  
-Larger and more complete Java projects, often involving games or full systems.
+8. 💻 C-like Languages  
+   Projects using languages inspired by C (C++, C#, Assembly), focusing on syntax and performance.
 
----
+9. 🌐 CodeWeb  
+   Front-end development practice using HTML, CSS, JavaScript, and small interactive prototypes.
 
-<p align="center">૮ ˙Ⱉ˙ ა rawr!</p>
+10. 🚀 JavX  
+    Larger and more complete Java applications, often involving systems, utilities, or game projects.
+
+--- 
+<p align="center"> ૮ ˙Ⱉ˙ ა ʙᴜɴxɪᴇ.ᴢɪᴘ </p>
