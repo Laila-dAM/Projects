@@ -1,0 +1,1 @@
+This program provides basic file management features such as creating, reading, editing, and deleting files. It uses standard C functions like fopen(), fgetc(), fputc(), and remove() to perform these operations. The user interacts with the program via a simple menu that allows them to select the desired action for a file.

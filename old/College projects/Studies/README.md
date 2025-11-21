@@ -1,0 +1,1 @@
+Folder with projects that I studied and practiced.

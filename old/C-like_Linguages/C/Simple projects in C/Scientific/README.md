@@ -1,0 +1,2 @@
+Scientific calculator
+Operator handling, mathematical functions and flow control, and stack implementation for postfix notation, support for parentheses and functions such as sine, cosine and logarithm.

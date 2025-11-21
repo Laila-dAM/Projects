@@ -1,0 +1,5 @@
+# - Mountain
+~ - Water
+* - Resource
+B - Base
+E - Exploration Area

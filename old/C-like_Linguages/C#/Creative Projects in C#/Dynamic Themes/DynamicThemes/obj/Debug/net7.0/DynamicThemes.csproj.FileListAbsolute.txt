@@ -1,0 +1,4 @@
+/home/lailamota238/C-like_Linguages/C#/Dynamic Themes/DynamicThemes/obj/Debug/net7.0/DynamicThemes.GeneratedMSBuildEditorConfig.editorconfig
+/home/lailamota238/C-like_Linguages/C#/Dynamic Themes/DynamicThemes/obj/Debug/net7.0/DynamicThemes.AssemblyInfoInputs.cache
+/home/lailamota238/C-like_Linguages/C#/Dynamic Themes/DynamicThemes/obj/Debug/net7.0/DynamicThemes.AssemblyInfo.cs
+/home/lailamota238/C-like_Linguages/C#/Dynamic Themes/DynamicThemes/obj/Debug/net7.0/DynamicThemes.csproj.CoreCompileInputs.cache

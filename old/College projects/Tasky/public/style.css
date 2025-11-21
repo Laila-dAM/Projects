@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #FAE7F3;
+  color: #11009E;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(73, 66, 228, 0.3);
+  max-width: 420px;
+  width: 100%;
+  padding: 25px 30px 40px;
+  position: relative;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #4942E4;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #E6B9DE;
+  gap: 10px;
+}
+
+.tabs button {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #11009E;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.tabs button.active {
+  border-bottom-color: #4942E4;
+  color: #4942E4;
+}
+
+.form-section {
+  display: none;
+}
+
+.form-section.active {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: #11009E;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"] {
+  padding: 10px 12px;
+  border: 2px solid #E6B9DE;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline-color: #4942E4;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4942E4;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  background-color: #4942E4;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #11009E;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #E6B9DE;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #11009E;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #4942E4;
+  color: white;
+}
+
+.todo-section {
+  margin-top: 20px;
+}
+
+#task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+#task-form input,
+#task-form textarea {
+  padding: 10px 12px;
+  border: 2px solid #E6B9DE;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline-color: #4942E4;
+  transition: border-color 0.3s ease;
+}
+
+#task-form input:focus,
+#task-form textarea:focus {
+  border-color: #4942E4;
+}
+
+#task-form button {
+  padding: 12px 20px;
+  background-color: #4942E4;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#task-form button:hover {
+  background-color: #11009E;
+}
+
+.task-list {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #E6B9DE;
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  color: #11009E;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(73, 66, 228, 0.2);
+  position: relative;
+}
+
+.task-item strong {
+  font-size: 1.1rem;
+}
+
+.task-item small {
+  font-size: 0.85rem;
+  color: #4942E4;
+  margin-top: 4px;
+}
+
+.task-item p {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.task-item.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-item .done-btn,
+.task-item .delete-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #11009E;
+  transition: color 0.3s ease;
+}
+
+.task-item .done-btn {
+  right: 40px;
+}
+
+.done-btn:hover {
+  color: #4942E4;
+}
+
+.delete-btn:hover {
+  color: #FF2C2C;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+
+  .task-item {
+    font-size: 0.95rem;
+  }
+
+  button[type="submit"],
+  #task-form button {
+    font-size: 1rem;
+  }
+
+  .logout-btn {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+}

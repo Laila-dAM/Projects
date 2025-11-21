@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GQRJIgfrwgKmbjLnOKESKL5GGI9oXZBoAC+HfsZMaGs=",
+  "Source": "CustomPlatform",
+  "BasePath": "_content/CustomPlatform",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
