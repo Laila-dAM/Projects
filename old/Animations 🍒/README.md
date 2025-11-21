@@ -13,6 +13,6 @@ This folder contains my animation artworks organized into two categories:
   Animations and drawings featuring vibrant and colorful styles.
 
 **Note:** Animations made using Ibis Paint.
----
 
-<p align="center">૮ ˙Ⱉ˙ ა rawr!</p>
+--- 
+<p align="center"> ૮ ˙Ⱉ˙ ა ʙᴜɴxɪᴇ.ᴢɪᴘ </p>
