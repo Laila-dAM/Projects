@@ -1,14 +1,14 @@
 CC = gcc
 CFLAGS = -Wall -std=c99
 SRC = src/main.c src/lexer.c src/parser.c src/error_check.c
-OBJ = $(SRC.:c=.o)
+OBJ = $(SRC:.c=.o)
 EXEC = code_analyzer
 
 $(EXEC): $(OBJ)
-    $(CC) $(OBJ) -o $(EXEC)
+	$(CC) $(OBJ) -o $(EXEC)
 
 %.o: %.c
-    $(CC) $(CFLAGS) -c $<
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-    rm -f $(OBJ) $(EXEC)
+	rm -f $(OBJ) $(EXEC)

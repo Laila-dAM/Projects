@@ -2,6 +2,7 @@
 #define LEXER_H
 
 typedef struct {
+    int dummy;
 } Token;
 
 char *read_file(const char *filename);

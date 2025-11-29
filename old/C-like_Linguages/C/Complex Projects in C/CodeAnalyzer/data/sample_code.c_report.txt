@@ -1,0 +1,2 @@
+Error: Missing semicolon on line 10
+Warning: Unused variable 'x'
